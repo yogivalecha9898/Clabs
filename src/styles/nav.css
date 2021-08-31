@@ -4,3 +4,36 @@
     width: 100%;
     padding: 0 10px;
 }
+
+.head {
+    /* border: 1px solid black; */
+    width: 90%;
+    margin: 10px 0 0 10px;
+}
+
+.add {
+    /* border: 1px solid black; */
+    width: 70px;
+    height: 70px;
+    margin: 240px 0 0 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #52057B;
+}
+
+.inner {
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #fff;
+    font-size: 2em;
+    cursor: pointer;
+    color: #52057B;
+    font-weight: bolder;
+}

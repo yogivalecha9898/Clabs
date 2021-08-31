@@ -3,27 +3,27 @@ import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
 import ListItemText from '@material-ui/core/ListItemText'
 import { useEffect } from "react"
-import { cos } from "prelude-ls"
 import '../styles/nav.css'
 import { makeStyles } from '@material-ui/core/styles';
 
 
 const useStyles = makeStyles({
     root: {
-    //   border: "1px solid black",
-      padding: "0px",
-      height: 50,
-      margin: "10px 0",
-      display: "flex",
-      alignItems: "center",
-      position: "relative",
-      cursor: "pointer",
-      '&::before': {
+        // border: "1px solid black",
+        padding: "0px",
+        height: 50,
+        margin: "10px 0",
+        display: "flex",
+        alignItems: "center",
+        position: "relative",
+        cursor: "pointer",
+        paddingLeft: "0px",
+        transition: "all 0.1s linear",
+        '&::before': {
             content: '""',  
             position: "absolute",
-            width: "70%",
-            height: "70%",
-            background: "orange",
+            width: "80%",
+            height: "80%",
             left: -250,
             opacity: 0,
             borderBottomRightRadius: "50%",
@@ -32,10 +32,15 @@ const useStyles = makeStyles({
         },
         '&:hover::before': {
             opacity: 1,
-            background: "red",
-            left: 0
-      }
+            background: "#52057B",
+            left: -10
+        }
     },
+    text: {
+        '&:hover': {
+            color: "#fff"
+        }
+    }
 })
 
 function Navigate() {
@@ -55,13 +60,19 @@ function Navigate() {
 
     return (
         <div className="nav">
+            <div className="head">
+                <h1>Dashboard</h1>
+            </div>
             {arr.map(elements => (
                 <List className={classes.root}>
                     <ListItem key={elements.id}>
-                        <ListItemText primary={elements.text}/>
+                        <ListItemText className={classes.text} primary={elements.text}/>
                     </ListItem>
                 </List>
             ))} 
+            <div className="add">
+                <div className="inner">+</div>
+            </div>
         </div>
     )
 }

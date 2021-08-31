@@ -57,9 +57,9 @@ function Paginate() {
     return (
         <div className="pag">
             <div className="upperPag">
-                <div className="round"></div>
-                <div className="round"></div>
-                <div className="round"></div>
+                <div className="round" style={{background: "#293462"}}></div>
+                <div className="round" style={{background: "#216583"}}></div>
+                <div className="round" style={{background: "#00818A"}}></div>
             </div>
             {
                 arr.map(ele => (
