@@ -1,12 +1,13 @@
 .main {
-    background: #FAF3F3;
+    background: #F8F8F8;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     padding: 0 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    /* border: 1px solid black; */
 }
 
 .upper {
@@ -26,7 +27,7 @@
 }
 .lower {
     width: 100%;
-    height: 68%;
+    height: 65%;
     background: #fff;
 }
 
@@ -62,4 +63,29 @@
 .boxes h1 span {
     font-size: 1rem;
     margin: 0 0 0 5px;
+}
+
+.graph {
+    margin: 50px 0 0 0;
+}
+
+.choice {
+    margin: 7px 0 0 470px;
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    height: 50px;
+    align-items: center;
+    border-radius: 50px;
+    padding: 0 5px;
+}
+.choose {
+    cursor: pointer;
+    height: 75%;
+    width: 49%;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0;
 }

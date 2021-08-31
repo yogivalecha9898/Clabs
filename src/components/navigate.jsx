@@ -26,13 +26,13 @@ const useStyles = makeStyles({
             height: "80%",
             left: -250,
             opacity: 0,
-            borderBottomRightRadius: "50%",
-            borderTopRightRadius: "20%",
+            borderBottomRightRadius: "50px",
+            borderTopRightRadius: "50px",
             transition: "all 0.1s linear",
         },
         '&:hover::before': {
             opacity: 1,
-            background: "#52057B",
+            background: "#1E3163",
             left: -10
         }
     },

@@ -63,7 +63,7 @@ function Paginate() {
             </div>
             {
                 arr.map(ele => (
-                    <List className={classes.root}>
+                    <List className={classes.root} style={{background: "#fff"}}>
                         <ListItem key={ele.id}>
                             <ListItemText primary={ele.title}/>
                         </ListItem>
